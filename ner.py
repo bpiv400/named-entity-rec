@@ -2,6 +2,8 @@ from nltk.corpus import conll2002
 from sklearn.feature_extraction import DictVectorizer
 from sklearn.linear_model import Perceptron
 from sklearn.metrics import precision_recall_fscore_support
+from nltk.stem import SnowballStemmer
+import get_lemmas
 
 # Assignment 7: NER
 # This is just to help you get going. Feel free to
@@ -36,10 +38,17 @@ def word2features(sent, i):
 
 if __name__ == "__main__":
     # Load the training data
+    path_to_lemmas = './lemmatization-es.txt'
     train_sents = list(conll2002.iob_sents('esp.train'))
     dev_sents = list(conll2002.iob_sents('esp.testa'))
     test_sents = list(conll2002.iob_sents('esp.testb'))
     
+    # Construct lemmas
+    word2lemma = get_lemmas.extract_lemmas(path_to_lemmas)
+
+    # get stemmer
+    stemmer = SnowballStemmer("spanish") 
+
     train_feats = []
     train_labels = []
 

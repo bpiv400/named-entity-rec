@@ -3,35 +3,107 @@ from sklearn.feature_extraction import DictVectorizer
 from sklearn.linear_model import Perceptron
 from sklearn.metrics import precision_recall_fscore_support
 from nltk.stem import SnowballStemmer
+from sklearn.ensemble import AdaBoostClassifier
+from sklearn.tree import DecisionTreeClassifier
+from sklearn.base import clone
+import numpy as np
+
+import unidecode
 import get_lemmas
+import pickle
 
 # Assignment 7: NER
 # This is just to help you get going. Feel free to
 # add to or modify any part of it.
 
+## Added indicator for whether all letters are capital (offset-capital)
+## Added index in sentence (sent-pos) 
+## EXPERIMENT RESULTS: 
+# Perceptron: 
+## o-sentence-index, o-all-caps, o-word : 17.14
+## o-all-caps, o-word: 51.41
+## o-all-caps, o-word, o-sentence-start: 47.45
+# All Features (2 history entity tags; lemma, word, and pos in 2 word symmetric
+# window; whether the current word is all caps)
+#   Default Tolerance: 73.10
+# All Features except History: 64.39
+## ADA BOOST: (Intuition: Each feature is weakly useful, combining them iteratively could be amazing)
+# All Features (2 history entity tags; lemma, word, and pos in 2 word symmetric
+# window; whether the current word is all caps)
+# has first letter capped, prefix, and suffix)
+# 600 Trees of depth 2: 21.48
+# 100 trees depth of 1: 23.41
+# WHY ARE THESE FAILING
 
-def getfeats(word, o):
+## double pass -- 2 perceptrons
+## All features with 2 predicted history chunks in the final model: 42.85
+
+def getfeats(word, pos, ent, o, pred):
     """ This takes the word in question and
     the offset with respect to the instance
     word """
-    o = str(o)
-    features = [
-        (o + 'word', word)
-        # TODO: add more features here.
-    ]
+    o_str = str(o)
+    isUpper, first_cap = False, False
+    prefix, suffix = '', ''
+    if (o == 0):
+        isUpper = (word.upper() == word)
+        first_cap = word[0].isupper()
+        stem = stemmer.stem(word)
+        comp_word = unidecode.unidecode(word.lower())
+        comp_stem = unidecode.unidecode(stem.lower())
+        while comp_stem not in comp_word:
+            comp_stem_opt1 = comp_stem[:len(comp_stem) - 1]
+            comp_stem_opt2 = comp_stem[1:]
+            comp_stem_opt3 = comp_stem[1:len(comp_stem)-1]
+            if comp_stem_opt1 in comp_word:
+                comp_stem = comp_stem_opt1
+            elif comp_stem_opt2 in comp_word:
+                comp_stem = comp_stem_opt2
+            else:
+                comp_stem = comp_stem_opt3
+        affixes = comp_word.split(comp_stem, 1)
+        prefix = word[:len(affixes[0])]
+        suffix = word[(len(word)-len(affixes[1])):]
+    
+    # Determine lemmas
+    lemma = ''
+    if word in word2lemma:
+        lemma = word2lemma[word.lower()]
+    else:
+        lemma = word
+    features = []
+    features.append((o_str+'word', word))
+    features.append((o_str+'lemma', lemma))
+    features.append((o_str+'pos', pos))
+
+    ## Maybe include depending on performance
+
+    if o == 0:
+        features.append(('all-cap', isUpper))
+        features.append(('first-cap', first_cap))
+        features.append(('prefix', prefix))
+        features.append(('suffix', suffix))
+    if pred is not None:
+        if o == -1 or o == -2:
+            features.append((o_str+'pred', pred))
     return features
     
 
-def word2features(sent, i):
+def word2features(sent, i, prev_preds = None):
     """ The function generates all features
     for the word at position i in the
     sentence."""
     features = []
     # the window around the token
-    for o in [-1,0,1]:
+    for o in [-1,-2, 0, 1, 2]:
         if i+o >= 0 and i+o < len(sent):
             word = sent[i+o][0]
-            featlist = getfeats(word, o)
+            pos = sent[i+o][1]
+            ent = sent[i+o][2]
+            pred = None
+            if prev_preds is not None:
+                pred = prev_preds[i+o]
+            featlist = getfeats(word, pos, ent, o, pred)
             features.extend(featlist)
     
     return dict(features)
@@ -54,35 +126,85 @@ if __name__ == "__main__":
 
     for sent in train_sents:
         for i in range(len(sent)):
-            feats = word2features(sent,i)
+            feats = word2features(sent,i, None)
             train_feats.append(feats)
             train_labels.append(sent[i][-1])
 
-    vectorizer = DictVectorizer()
-    X_train = vectorizer.fit_transform(train_feats)
+    vectorizer1 = DictVectorizer()
+    vectorizer2 = clone(vectorizer1)
+    print("Number of train features model 1: " + str(len(train_feats[4])))
+    X_train = vectorizer1.fit_transform(train_feats)
 
     # TODO: play with other models
-    model = Perceptron(verbose=1)
-    model.fit(X_train, train_labels)
+    print('Training Model 1')
+    # model = AdaBoostClassifier(DecisionTreeClassifier(max_depth=1),
+    # n_estimators=100,
+    # learning_rate=1)
+    model1 = Perceptron()
+    model2 = clone(model1)
+    print("First model training x_size: " +str(X_train.shape))
+    model1.fit(X_train, train_labels)
+    train_pred = model1.predict(X_train)
+    
+    train_feats = []
+    train_labels = []
+
+    # Preparing Second Pass Model
+    instance_counter = 0
+    for sent in train_sents:
+        curr_preds = [0]*len(sent)
+        for j in range(len(sent)):
+            curr_preds[j] = train_pred[instance_counter]
+            instance_counter += 1
+        for i in range(len(sent)):
+            feats = word2features(sent, i, curr_preds)
+            train_feats.append(feats)
+            train_labels.append(sent[i][-1])
+
+    X_train = vectorizer2.fit_transform(train_feats)
+
+    print("Training Second Pass Model")
+    print("Second model training x_size: " +str(X_train.shape))
+    model2.fit(X_train, train_labels)
 
     test_feats = []
     test_labels = []
 
+    #First pass over test_sents
+    curr_sents = test_sents
+
     # switch to test_sents for your final results
-    for sent in dev_sents:
+    for sent in curr_sents:
         for i in range(len(sent)):
-            feats = word2features(sent,i)
+            feats = word2features(sent,i, None)
             test_feats.append(feats)
             test_labels.append(sent[i][-1])
+    print("Number of test features model 1: " + str(len(test_feats[4])))
+    X_test = vectorizer1.transform(test_feats)
+    print("First model test x_size: " +str(X_test.shape))
+    y_pred = model1.predict(X_test)
 
-    X_test = vectorizer.transform(test_feats)
-    y_pred = model.predict(X_test)
+    #instance_counter = 0
+    #for sent in curr_sents:
+    #    curr_preds = [0]*len(sent)
+    #    for j in range(len(sent)):
+    #        curr_preds[j] = y_pred_prime[instance_counter]
+    #        instance_counter += 1
+    #    for i in range(len(sent)):
+    #        feats = word2features(sent, i, curr_preds)
+    #        test_feats.append(feats)
+    #        test_labels.append(sent[i][-1])
+    #
+    #X_test = vectorizer2.transform(test_feats)
+    #
+    #print("Second model test x_size: " +str(X_test.shape))
+    #y_pred = model2.predict(X_test)
 
     j = 0
     print("Writing to results.txt")
     # format is: word gold pred
     with open("results.txt", "w") as out:
-        for sent in dev_sents: 
+        for sent in curr_sents: 
             for i in range(len(sent)):
                 word = sent[i][0]
                 gold = sent[i][-1]

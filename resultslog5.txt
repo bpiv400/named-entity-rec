@@ -394,7 +394,7 @@ la	O	O
 Delegación	B-ORG	B-ORG
 Territorial	I-ORG	I-ORG
 de	I-ORG	I-ORG
-la	I-ORG	O
+la	I-ORG	I-ORG
 Junta	I-ORG	B-ORG
 de	O	I-ORG
 la	O	O
@@ -832,7 +832,7 @@ la	O	O
 escuadra	O	O
 de	O	O
 los	O	O
-Socceroos	B-ORG	B-ORG
+Socceroos	B-ORG	O
 a	O	O
 la	O	O
 dupla	O	O
@@ -844,7 +844,7 @@ Olympic	I-ORG	I-ORG
 los	O	O
 argentinos	O	O
 nacionalizados	O	O
-Gabriel	B-PER	B-PER
+Gabriel	B-PER	I-PER
 Méndez	I-PER	I-PER
 y	O	O
 Pablo	B-PER	B-PER
@@ -938,7 +938,7 @@ Bosnich	I-PER	I-PER
 Manchester	B-ORG	B-ORG
 United	I-ORG	I-ORG
 ,	O	O
-Inglaterra	B-LOC	B-PER
+Inglaterra	B-LOC	B-LOC
 )	O	O
 ;	O	O
 los	O	O
@@ -948,7 +948,7 @@ Okon	I-PER	I-PER
 (	O	O
 Fiorentina	B-ORG	B-LOC
 ,	O	O
-Italia	B-LOC	B-ORG
+Italia	B-LOC	B-LOC
 )	O	O
 ,	O	O
 Stan	B-PER	B-PER
@@ -2268,7 +2268,7 @@ la	O	O
 Unión	B-ORG	B-ORG
 Europea	I-ORG	I-ORG
 y	O	O
-Chile	B-ORG	B-ORG
+Chile	B-ORG	B-LOC
 se	O	O
 inició	O	O
 en	O	O
@@ -2287,7 +2287,7 @@ la	O	O
 política	O	O
 impositiva	O	O
 de	O	O
-Chile	B-LOC	B-LOC
+Chile	B-LOC	B-ORG
 para	O	O
 con	O	O
 las	O	O
@@ -2729,9 +2729,9 @@ Economía	B-ORG	B-MISC
 de	I-ORG	O
 la	I-ORG	O
 Cámara	I-ORG	B-ORG
-de	I-ORG	O
+de	I-ORG	I-ORG
 los	I-ORG	O
-Comunes	I-ORG	B-ORG
+Comunes	I-ORG	I-ORG
 que	O	O
 la	O	O
 adquisición	O	O
@@ -3063,7 +3063,7 @@ siniestralidad	O	O
 Para	O	O
 UGT	B-ORG	B-ORG
 de	O	O
-Madrid	B-LOC	B-LOC
+Madrid	B-LOC	B-ORG
 ,	O	O
 la	O	O
 decisión	O	O
@@ -3136,7 +3136,7 @@ defensa	O	O
 del	O	O
 Pacto	B-MISC	B-MISC
 por	I-MISC	O
-la	I-MISC	O
+la	I-MISC	I-MISC
 Estabilidad	I-MISC	I-MISC
 .	O	O
 Avila	B-LOC	B-LOC
@@ -3590,7 +3590,7 @@ musicales	O	O
 que	O	O
 proseguirá	O	O
 en	O	O
-Argentina	B-LOC	B-LOC
+Argentina	B-LOC	B-ORG
 ,	O	O
 para	O	O
 su	O	O
@@ -3720,7 +3720,7 @@ de	O	O
 "	B-MISC	O
 Llamada	I-MISC	B-MISC
 de	I-MISC	O
-Carnaval	I-MISC	I-MISC
+Carnaval	I-MISC	I-ORG
 "	I-MISC	O
 de	O	O
 Pedro	B-PER	B-PER
@@ -3836,10 +3836,10 @@ acciones	O	O
 españolas	O	O
 en	O	O
 la	O	O
-Bolsa	B-ORG	B-ORG
-de	O	O
+Bolsa	B-ORG	B-MISC
+de	O	I-ORG
 valores	O	O
-de	O	O
+de	O	I-ORG
 París	B-LOC	B-LOC
 ,	O	O
 fue	O	O
@@ -3849,7 +3849,7 @@ martes	O	O
 la	O	O
 siguiente	O	O
 :	O	O
-ACTUAL	O	B-PER
+ACTUAL	O	B-ORG
 VARIACION	O	I-PER
 TELEFONICA	B-ORG	B-ORG
 20,66	O	O
@@ -4312,7 +4312,7 @@ y	O	O
 a	O	O
 Palma	B-LOC	B-PER
 de	I-LOC	O
-Mallorca	I-LOC	I-ORG
+Mallorca	I-LOC	I-LOC
 ha	O	O
 experimentado	O	O
 una	O	O
@@ -4993,8 +4993,8 @@ del	O	O
 Consejo	B-ORG	B-ORG
 General	I-ORG	I-ORG
 de	I-ORG	I-ORG
-la	I-ORG	O
-Arquitectura	I-ORG	I-ORG
+la	I-ORG	I-ORG
+Arquitectura	I-ORG	I-MISC
 Técnica	I-ORG	I-ORG
 de	I-ORG	I-ORG
 España	I-ORG	B-LOC
@@ -5061,7 +5061,7 @@ Sistema	B-MISC	B-MISC
 de	I-MISC	O
 Gestión	I-MISC	I-ORG
 de	I-MISC	O
-Prevención	I-MISC	I-MISC
+Prevención	I-MISC	I-ORG
 de	I-MISC	I-MISC
 Riesgos	I-MISC	I-MISC
 Laborales	I-MISC	I-MISC
@@ -5101,7 +5101,7 @@ Los	O	O
 Premios	B-MISC	B-MISC
 Nacionales	I-MISC	I-MISC
 de	I-MISC	I-ORG
-Seguridad	I-MISC	I-PER
+Seguridad	I-MISC	I-ORG
 ,	O	O
 instituidos	O	O
 hace	O	O
@@ -5574,7 +5574,7 @@ Jefatura	B-ORG	B-LOC
 Superior	I-ORG	I-ORG
 de	I-ORG	I-ORG
 Policía	I-ORG	I-ORG
-de	O	I-ORG
+de	O	O
 la	O	O
 comisaría	O	O
 melillense	O	O
@@ -6677,7 +6677,7 @@ que	O	O
 "	O	O
 el	O	O
 Estado	B-ORG	B-ORG
-de	I-ORG	O
+de	I-ORG	I-ORG
 Israel	I-ORG	B-ORG
 tiene	O	O
 que	O	O
@@ -6775,7 +6775,7 @@ secretaria	O	O
 de	O	O
 Estado	B-MISC	B-ORG
 de	I-MISC	I-ORG
-Presupuestos	I-MISC	I-MISC
+Presupuestos	I-MISC	I-PER
 ,	O	O
 Elvira	B-PER	B-PER
 Rodríguez	I-PER	I-PER
@@ -7337,7 +7337,7 @@ miembro	O	O
 del	O	O
 grupo	O	O
 ecologista	O	O
-Agaden	B-ORG	I-PER
+Agaden	B-ORG	B-ORG
 ,	O	O
 explicó	O	O
 hoy	O	O
@@ -7356,7 +7356,7 @@ la	O	O
 Mancomunidad	B-ORG	B-ORG
 de	I-ORG	O
 Municipios	I-ORG	I-LOC
-del	I-ORG	O
+del	I-ORG	I-LOC
 Campo	I-ORG	B-LOC
 de	I-ORG	I-LOC
 Gibraltar	I-ORG	I-LOC
@@ -7581,7 +7581,7 @@ EFE	B-ORG	B-ORG
 El	O	O
 Gobierno	B-ORG	B-ORG
 Vasco	I-ORG	I-ORG
-"	O	O
+"	O	I-ORG
 se	O	O
 felicita	O	O
 de	O	O
@@ -7715,7 +7715,7 @@ los	O	O
 partidos	O	O
 del	O	O
 Parlamento	B-ORG	B-ORG
-"	O	O
+"	O	I-ORG
 es	O	O
 la	O	O
 que	O	O
@@ -8915,8 +8915,8 @@ presentación	O	O
 del	O	O
 libro	O	O
 '	B-MISC	O
-Orientaciones	I-MISC	B-MISC
-Educativas	I-MISC	I-PER
+Orientaciones	I-MISC	B-ORG
+Educativas	I-MISC	I-MISC
 para	I-MISC	O
 el	I-MISC	O
 desarrollo	I-MISC	O
@@ -9046,7 +9046,7 @@ correrá	O	O
 a	O	O
 cargo	O	O
 de	O	O
-Santiago	B-PER	B-PER
+Santiago	B-PER	B-LOC
 Coca	I-PER	I-PER
 ,	O	O
 y	O	O
@@ -9231,7 +9231,7 @@ cuatro	O	O
 cursos	O	O
 de	O	O
 la	O	O
-ESO	B-MISC	B-MISC
+ESO	B-MISC	B-ORG
 ,	O	O
 con	O	O
 conferencias	O	O
@@ -9588,7 +9588,7 @@ de	O	O
 su	O	O
 gata	O	O
 "	B-MISC	O
-Michina	I-MISC	I-MISC
+Michina	I-MISC	B-MISC
 "	I-MISC	O
 ,	O	O
 que	O	O
@@ -9992,7 +9992,7 @@ informó	O	O
 la	O	O
 Denominación	B-ORG	B-ORG
 de	I-ORG	I-ORG
-Origen	I-ORG	I-ORG
+Origen	I-ORG	I-MISC
 Vinos	I-ORG	I-MISC
 de	I-ORG	I-MISC
 Madrid	I-ORG	I-ORG
@@ -10207,7 +10207,7 @@ informó	O	O
 la	O	O
 Denominación	B-ORG	B-ORG
 de	I-ORG	I-ORG
-Origen	I-ORG	I-ORG
+Origen	I-ORG	I-MISC
 Vinos	I-ORG	I-MISC
 de	I-ORG	I-MISC
 Madrid	I-ORG	I-ORG
@@ -11503,7 +11503,7 @@ actualidad	O	O
 el	O	O
 accionariado	O	O
 de	O	O
-Olis	B-ORG	B-ORG
+Olis	B-ORG	I-ORG
 de	I-ORG	O
 Catalunya	I-ORG	I-ORG
 se	O	O
@@ -11733,8 +11733,8 @@ Consejo	B-ORG	B-ORG
 de	I-ORG	I-ORG
 Seguridad	I-ORG	I-ORG
 de	I-ORG	O
-la	I-ORG	O
-ONU	I-ORG	B-ORG
+la	I-ORG	I-ORG
+ONU	I-ORG	I-ORG
 respaldó	O	O
 hoy	O	O
 de	O	O
@@ -11866,7 +11866,7 @@ retirada	O	O
 del	O	O
 Ejército	B-ORG	B-ORG
 de	I-ORG	O
-Israel	I-ORG	I-ORG
+Israel	I-ORG	B-LOC
 de	O	O
 la	O	O
 franja	O	O
@@ -12476,7 +12476,7 @@ de	O	O
 Moscú	B-ORG	B-LOC
 en	O	O
 Asia	B-LOC	B-LOC
-Central	I-LOC	I-LOC
+Central	I-LOC	I-ORG
 ,	O	O
 en	O	O
 la	O	O
@@ -12598,7 +12598,7 @@ seis	O	O
 Estados	B-ORG	B-ORG
 signatarios	O	O
 del	O	O
-Tratado	B-MISC	B-ORG
+Tratado	B-MISC	B-MISC
 de	I-MISC	I-MISC
 Defensa	I-MISC	I-MISC
 Colectiva	I-MISC	I-ORG
@@ -12850,7 +12850,7 @@ de	O	O
 mañana	O	O
 sobre	O	O
 Seguridad	B-MISC	B-MISC
-Colectiva	I-MISC	I-MISC
+Colectiva	I-MISC	I-PER
 será	O	O
 las	O	O
 medidas	O	O
@@ -13262,7 +13262,7 @@ Vitícolas	I-ORG	B-ORG
 Rústicas	B-ORG	B-LOC
 de	I-ORG	O
 la	I-ORG	O
-Ribera	I-ORG	B-ORG
+Ribera	I-ORG	B-LOC
 del	I-ORG	O
 Duero	I-ORG	B-MISC
 ,	O	O
@@ -13433,7 +13433,7 @@ Interdisciplinaria	I-ORG	I-MISC
 en	I-ORG	O
 Desarrollo	I-ORG	B-LOC
 (	O	O
-CID/Gallup	B-ORG	B-LOC
+CID/Gallup	B-ORG	B-MISC
 )	O	O
 ,	O	O
 va	O	O
@@ -13646,8 +13646,8 @@ las	O	O
 tres	O	O
 derrocado	O	O
 Arnulfo	B-PER	B-PER
-Arias	I-PER	I-PER
-Madrid	I-PER	I-PER
+Arias	I-PER	B-PER
+Madrid	I-PER	I-ORG
 ,	O	O
 de	O	O
 quien	O	O
@@ -13930,7 +13930,7 @@ una	O	O
 posible	O	O
 toma	O	O
 del	O	O
-Canal	B-LOC	B-ORG
+Canal	B-LOC	B-MISC
 .	O	O
 Inca	B-LOC	B-PER
 (	O	O
@@ -13950,7 +13950,7 @@ los	O	O
 equipos	O	O
 de	O	O
 baloncesto	O	O
-Básquet	B-ORG	I-ORG
+Básquet	B-ORG	B-PER
 Inca	I-ORG	I-PER
 y	O	O
 Menorca	B-ORG	B-PER
@@ -14204,7 +14204,7 @@ el	O	O
 más	O	O
 importante	O	O
 de	O	O
-Wall	B-MISC	B-LOC
+Wall	B-MISC	B-MISC
 Street	I-MISC	I-MISC
 ,	O	O
 perdía	O	O
@@ -14915,7 +14915,7 @@ que	O	O
 los	O	O
 centros	O	O
 de	O	O
-Huesca	B-LOC	B-LOC
+Huesca	B-LOC	B-ORG
 funcionan	O	O
 como	O	O
 "	O	O
@@ -15125,7 +15125,7 @@ Dueñas	I-PER	I-PER
 ,	O	O
 pívot	O	O
 del	O	O
-Barcelona	B-ORG	B-LOC
+Barcelona	B-ORG	B-ORG
 ,	O	O
 sigue	O	O
 sin	O	O
@@ -16499,7 +16499,7 @@ remitió	O	O
 a	O	O
 los	O	O
 Servicios	B-ORG	B-ORG
-Sociales	I-ORG	I-MISC
+Sociales	I-ORG	I-ORG
 municipales	O	O
 "	O	O
 que	O	O
@@ -16576,7 +16576,7 @@ de	O	O
 que	O	O
 el	O	O
 Juzgado	B-ORG	B-ORG
-de	I-ORG	O
+de	I-ORG	I-ORG
 Menores	I-ORG	I-ORG
 decida	O	O
 sobre	O	O
@@ -16717,13 +16717,13 @@ junio	O	O
 en	O	O
 la	O	O
 Escuela	B-LOC	B-LOC
-de	I-LOC	O
+de	I-LOC	I-ORG
 Ingeniería	I-LOC	I-ORG
 Técnica	I-LOC	I-ORG
 Minera.	I-LOC	I-ORG
 Topográfica	I-LOC	I-ORG
 de	I-LOC	O
-Mieres	I-LOC	B-LOC
+Mieres	I-LOC	I-MISC
 ,	O	O
 analizarán	O	O
 la	O	O
@@ -16813,7 +16813,7 @@ de	O	O
 la	O	O
 comarca	B-LOC	O
 del	I-LOC	O
-Caudal	I-LOC	B-LOC
+Caudal	I-LOC	B-ORG
 ,	O	O
 y	O	O
 también	O	O
@@ -16912,7 +16912,7 @@ de	I-ORG	I-ORG
 Ingenieros	I-ORG	I-ORG
 Técnicos	I-ORG	I-ORG
 de	I-ORG	O
-Minas	I-ORG	I-ORG
+Minas	I-ORG	I-MISC
 de	I-ORG	O
 Asturias	I-ORG	B-LOC
 es	O	O
@@ -16931,7 +16931,7 @@ internacional	O	O
 y	O	O
 recordó	O	O
 que	O	O
-España	B-ORG	B-LOC
+España	B-ORG	B-ORG
 es	O	O
 ,	O	O
 tras	O	O
@@ -17109,8 +17109,8 @@ de	O	O
 ancianos	O	O
 "	B-ORG	O
 Valle	I-ORG	I-MISC
-del	I-ORG	I-MISC
-Caudal	I-ORG	I-MISC
+del	I-ORG	I-LOC
+Caudal	I-ORG	I-LOC
 "	I-ORG	O
 ,	O	O
 el	O	O
@@ -17461,7 +17461,7 @@ los	O	O
 sueños	O	O
 de	O	O
 Agustín	B-PER	B-PER
-Ibarrola	I-PER	I-MISC
+Ibarrola	I-PER	I-PER
 "	O	O
 .	O	O
 Imaz	B-PER	B-PER
@@ -17680,7 +17680,7 @@ Euro	O	O
 Libra	O	B-ORG
 0,6783	O	O
 0,6706	O	O
-Yen	O	O
+Yen	O	B-LOC
 106,77	O	O
 107,13	O	O
 EFE	B-ORG	B-ORG
@@ -17702,7 +17702,7 @@ celebra	O	O
 este	O	O
 jueves	O	O
 Pleno	B-MISC	B-LOC
-de	O	O
+de	O	I-ORG
 carácter	O	O
 ordinario	O	O
 con	O	O
@@ -17723,9 +17723,9 @@ los	O	O
 cuotas	O	O
 del	O	O
 Impuesto	B-MISC	B-MISC
-de	I-MISC	O
+de	I-MISC	I-MISC
 Bienes	I-MISC	I-MISC
-Inmuebles	I-MISC	I-ORG
+Inmuebles	I-MISC	I-MISC
 (	O	O
 IAE	B-MISC	B-ORG
 )	O	O
@@ -17741,7 +17741,7 @@ desvío	O	O
 de	O	O
 los	O	O
 arroyos	O	O
-Sorravides	B-MISC	I-MISC
+Sorravides	B-MISC	I-ORG
 e	O	O
 Indiana	B-MISC	B-LOC
 .	O	O
@@ -17767,7 +17767,7 @@ vecinos	O	O
 al	O	O
 final	O	O
 del	O	O
-Pleno	B-MISC	B-ORG
+Pleno	B-MISC	B-MISC
 ,	O	O
 servirá	O	O
 para	O	O
@@ -17962,7 +17962,7 @@ En	O	O
 el	O	O
 apartado	O	O
 de	O	O
-Obras	B-MISC	B-LOC
+Obras	B-MISC	B-MISC
 ,	O	O
 los	O	O
 concejales	O	O
@@ -18148,7 +18148,7 @@ como	O	O
 declaró	O	O
 la	O	O
 consellera	O	O
-de	O	O
+de	O	I-ORG
 Justicia	B-MISC	I-ORG
 ,	O	O
 Núria	B-PER	B-PER
@@ -18425,7 +18425,7 @@ de	I-MISC	O
 Caballero	I-MISC	B-ORG
 de	I-MISC	O
 la	I-MISC	O
-Orden	I-MISC	B-ORG
+Orden	I-MISC	B-MISC
 de	I-MISC	I-MISC
 Dannebrog	I-MISC	I-ORG
 ,	O	O
@@ -18587,7 +18587,7 @@ jefe	O	O
 de	O	O
 la	O	O
 Casa	B-ORG	B-ORG
-Real	I-ORG	I-LOC
+Real	I-ORG	I-ORG
 ,	O	O
 Soeren	B-PER	B-PER
 Haslund-Christensen	I-PER	I-PER
@@ -19139,7 +19139,7 @@ Madrileño	I-ORG	I-ORG
 del	I-ORG	O
 Menor.	I-ORG	I-ORG
 la	I-ORG	O
-Familia	I-ORG	I-ORG
+Familia	I-ORG	B-ORG
 ,	O	O
 dependiente	O	O
 de	O	O
@@ -19221,7 +19221,7 @@ Profesional.	I-MISC	I-MISC
 Módulos	I-MISC	I-MISC
 de	I-MISC	O
 garantía	I-MISC	O
-social	I-MISC	O
+social	I-MISC	I-MISC
 "	I-MISC	O
 ,	O	O
 "	B-MISC	O
@@ -20083,7 +20083,7 @@ ronda	O	O
 a	O	O
 la	O	O
 italiana	O	O
-Germana	B-PER	B-PER
+Germana	B-PER	B-ORG
 di	I-PER	O
 Natale	I-PER	B-PER
 ,	O	O
@@ -21234,7 +21234,7 @@ secretario	O	O
 general	O	O
 de	O	O
 Gestión.	B-MISC	B-ORG
-Coordinación	I-MISC	I-MISC
+Coordinación	I-MISC	B-ORG
 Sanitaria	I-MISC	I-MISC
 "	O	O
 sigue	O	O
@@ -21267,7 +21267,7 @@ al	O	O
 proyecto	O	O
 del	O	O
 Hospital	B-ORG	B-ORG
-de	I-ORG	I-MISC
+de	I-ORG	I-ORG
 Alzira	I-ORG	I-ORG
 ,	O	O
 gestionado	O	O
@@ -21306,11 +21306,11 @@ Federación	B-ORG	B-ORG
 de	I-ORG	I-ORG
 Asociaciones	I-ORG	I-ORG
 para	I-ORG	I-ORG
-la	I-ORG	O
+la	I-ORG	I-ORG
 Defensa	I-ORG	I-ORG
 de	I-ORG	I-ORG
 la	I-ORG	I-ORG
-Sanidad	I-ORG	I-ORG
+Sanidad	I-ORG	B-MISC
 Pública	I-ORG	I-ORG
 (	O	O
 FADSP	B-ORG	B-ORG
@@ -21849,7 +21849,7 @@ la	O	O
 elección	O	O
 del	O	O
 nuevo	O	O
-alcalde	O	O
+alcalde	O	I-MISC
 en	O	O
 el	O	O
 pleno	O	O
@@ -22091,7 +22091,7 @@ la	O	O
 elección	O	O
 de	O	O
 nuevo	O	O
-alcalde	O	O
+alcalde	O	I-MISC
 requiere	O	O
 al	O	O
 menos	O	O
@@ -22398,7 +22398,7 @@ restauración	O	O
 del	O	O
 patrimonio	O	O
 del	O	O
-Pirineo	B-MISC	B-MISC
+Pirineo	B-MISC	B-LOC
 aragonés	O	O
 .	O	O
 Marcén	B-PER	B-PER
@@ -22642,7 +22642,7 @@ Cultura.	I-ORG	I-ORG
 Turismo	I-ORG	I-ORG
 del	I-ORG	I-MISC
 Gobierno	I-ORG	I-MISC
-de	I-ORG	I-ORG
+de	I-ORG	I-MISC
 Aragón	I-ORG	I-ORG
 y	O	O
 la	O	O
@@ -22733,7 +22733,7 @@ la	O	O
 arquitectura	O	O
 popular	O	O
 del	O	O
-Pirineo	B-MISC	B-LOC
+Pirineo	B-MISC	I-MISC
 aragonés	O	O
 "	O	O
 no	O	O
@@ -23003,7 +23003,7 @@ la	O	O
 Confederación	B-ORG	B-ORG
 Sindical	I-ORG	I-ORG
 Unica	I-ORG	I-ORG
-de	I-ORG	O
+de	I-ORG	I-ORG
 Trabajadores	I-ORG	I-ORG
 Campesinos	I-ORG	I-MISC
 de	I-ORG	O
@@ -24990,7 +24990,7 @@ Lisboa	I-ORG	I-ORG
 ,	O	O
 la	O	O
 Junta	B-ORG	B-ORG
-de	I-ORG	I-ORG
+de	I-ORG	O
 Turismo	I-ORG	I-ORG
 de	I-ORG	O
 Costa	I-ORG	B-LOC
@@ -25014,7 +25014,7 @@ regiones	O	O
 de	O	O
 Turismo	B-LOC	B-MISC
 de	I-LOC	O
-Costa	I-LOC	B-LOC
+Costa	I-LOC	I-MISC
 Azul	I-LOC	I-LOC
 ,	O	O
 Leiria/Fatima	B-LOC	B-ORG
@@ -25024,7 +25024,7 @@ Oeste	B-LOC	B-LOC
 ,	O	O
 Ribatejo	B-LOC	B-PER
 y	O	O
-Templarios	B-LOC	B-LOC
+Templarios	B-LOC	B-ORG
 .	O	O
 Madrid	B-LOC	B-LOC
 ,	O	O
@@ -25038,7 +25038,7 @@ EFE	B-ORG	B-ORG
 El	O	O
 portavoz	O	O
 de	O	O
-Interior	B-MISC	B-MISC
+Interior	B-MISC	B-ORG
 del	O	O
 PP	B-ORG	B-ORG
 en	O	O
@@ -25423,7 +25423,7 @@ Congreso	I-MISC	B-ORG
 Europeo	I-MISC	I-ORG
 sobre	I-MISC	O
 la	I-MISC	O
-Problemática.	I-MISC	B-MISC
+Problemática.	I-MISC	B-ORG
 Perspectivas	I-MISC	I-MISC
 de	I-MISC	O
 la	I-MISC	O
@@ -26298,7 +26298,7 @@ incidió	O	O
 en	O	O
 que	O	O
 la	O	O
-Comunidad	B-ORG	B-LOC
+Comunidad	B-ORG	B-ORG
 tiene	O	O
 un	O	O
 sistema	O	O
@@ -26362,7 +26362,7 @@ lugares	O	O
 del	O	O
 Estado	B-LOC	B-ORG
 y	O	O
-Europa	B-LOC	B-LOC
+Europa	B-LOC	I-MISC
 participarán	O	O
 el	O	O
 día	O	O
@@ -26372,7 +26372,7 @@ mayo	O	O
 en	O	O
 la	O	O
 Clásica	B-MISC	B-LOC
-Internacional	I-MISC	I-MISC
+Internacional	I-MISC	I-LOC
 Alto	I-MISC	I-MISC
 Nervión	I-MISC	I-MISC
 ,	O	O
@@ -26420,7 +26420,7 @@ de	O	I-LOC
 San	B-LOC	I-LOC
 Antonio	I-LOC	I-LOC
 de	I-LOC	O
-Etxebarri	I-LOC	B-LOC
+Etxebarri	I-LOC	I-LOC
 y	O	O
 ,	O	O
 tras	O	O
@@ -26566,7 +26566,7 @@ por	O	O
 los	O	O
 Ayuntamientos	B-ORG	B-ORG
 de	O	O
-Basauri	B-LOC	B-LOC
+Basauri	B-LOC	B-ORG
 ,	O	O
 Etxebarri	B-LOC	B-PER
 ,	O	O
@@ -26684,7 +26684,7 @@ Europa	B-LOC	B-LOC
 vendrán	O	O
 los	O	O
 suizos	O	O
-Mephisto-Romers	B-ORG	B-PER
+Mephisto-Romers	B-ORG	B-ORG
 y	O	O
 G..	B-ORG	B-ORG
 Mita	I-ORG	I-PER
@@ -26874,7 +26874,7 @@ Gerosa	I-PER	I-PER
 (	O	O
 ITA	B-LOC	B-ORG
 -	O	O
-Amica	B-ORG	B-ORG
+Amica	B-ORG	B-LOC
 )	O	O
 m.	O	O
 t.	O	O
@@ -26920,7 +26920,7 @@ Power	I-PER	I-PER
 (	O	O
 IRL	B-LOC	B-ORG
 -	O	O
-Linda	B-ORG	B-LOC
+Linda	B-ORG	O
 )	O	O
 m.	O	O
 t.	O	O
@@ -27077,7 +27077,7 @@ a	O	O
 Hernán	B-PER	B-PER
 Buenahora	I-PER	I-PER
 (	O	O
-COL	B-LOC	B-ORG
+COL	B-LOC	B-LOC
 -	O	O
 Selle	B-ORG	B-LOC
 )	O	O
@@ -27391,8 +27391,8 @@ Facultad	B-ORG	B-ORG
 de	I-ORG	I-ORG
 Ciencias	I-ORG	I-ORG
 de	I-ORG	I-ORG
-la	I-ORG	I-MISC
-Información	I-ORG	I-MISC
+la	I-ORG	I-ORG
+Información	I-ORG	I-ORG
 de	O	O
 la	O	O
 Universidad	B-ORG	B-ORG
@@ -27496,8 +27496,8 @@ Evangelización.	I-MISC	I-MISC
 medios	I-MISC	I-MISC
 de	I-MISC	I-MISC
 comunicación	I-MISC	I-MISC
-social	I-MISC	O
-"	I-MISC	O
+social	I-MISC	I-MISC
+"	I-MISC	I-MISC
 .	O	O
 Posteriormente	O	O
 ,	O	O
@@ -27845,7 +27845,7 @@ provinciales	O	O
 de	O	O
 Atanzón	B-LOC	B-LOC
 y	O	O
-Aldeanueva	B-LOC	B-LOC
+Aldeanueva	B-LOC	B-ORG
 para	O	O
 ejecutar	O	O
 las	O	O
@@ -28178,8 +28178,8 @@ Asociación	B-ORG	B-ORG
 Deportiva	I-ORG	I-ORG
 de	I-ORG	I-ORG
 Trabajadores	I-ORG	I-ORG
-de	I-ORG	O
-Firestone	I-ORG	B-LOC
+de	I-ORG	I-ORG
+Firestone	I-ORG	I-ORG
 ,	O	O
 Pedro	B-PER	B-PER
 Lobeto	I-PER	I-PER
@@ -28194,7 +28194,7 @@ de	O	O
 la	O	O
 fábrica	O	O
 de	O	O
-Puente	B-LOC	B-LOC
+Puente	B-LOC	I-LOC
 San	I-LOC	I-LOC
 Miguel	I-LOC	I-LOC
 ,	O	O
@@ -28313,7 +28313,7 @@ Unidad	O	I-LOC
 Valor	O	I-ORG
 anterior	O	O
 -	O	O
-Bruselas	B-LOC	B-LOC
+Bruselas	B-LOC	O
 9.816	O	O
 Euros	O	B-ORG
 /	O	O
@@ -28345,7 +28345,7 @@ gr	O	O
 s-d	O	O
 Zúrich	B-LOC	I-MISC
 15.150	O	O
-Francos	O	B-PER
+Francos	O	B-ORG
 suizos	O	O
 /	O	O
 kg	O	O
@@ -28888,7 +28888,7 @@ Política	B-MISC	B-MISC
 Exterior	I-MISC	I-PER
 y	O	O
 de	O	O
-Seguridad	B-MISC	B-MISC
+Seguridad	B-MISC	I-PER
 Común	I-MISC	I-MISC
 ,	O	O
 Javier	B-PER	B-PER
@@ -29145,7 +29145,7 @@ despliegue	O	O
 de	O	O
 la	O	O
 Fuerza	B-ORG	B-ORG
-para	I-ORG	I-ORG
+para	I-ORG	O
 Kosovo	I-ORG	B-LOC
 (	O	O
 KFOR	B-ORG	B-ORG
@@ -29491,7 +29491,7 @@ compañía	O	O
 El	O	O
 portavoz	O	O
 Gregory	B-PER	B-PER
-Reaves	I-PER	B-ORG
+Reaves	I-PER	I-PER
 se	O	O
 negó	O	O
 a	O	O
@@ -29558,7 +29558,7 @@ de	I-ORG	I-ORG
 Justicia	I-ORG	I-ORG
 de	I-ORG	I-ORG
 los	I-ORG	O
-EEUU	I-ORG	B-ORG
+EEUU	I-ORG	I-ORG
 .	O	O
 Pontevedra	B-LOC	B-LOC
 ,	O	O
@@ -29583,7 +29583,7 @@ la	O	O
 directora	O	O
 gerente	O	O
 del	O	O
-Palacio	B-LOC	B-ORG
+Palacio	B-LOC	B-MISC
 de	I-LOC	I-LOC
 Cultura	I-LOC	I-LOC
 de	O	O
@@ -30020,7 +30020,7 @@ concejales	O	O
 de	O	O
 Cultura	B-MISC	B-MISC
 y	O	O
-Tráfico	B-MISC	B-PER
+Tráfico	B-MISC	B-ORG
 por	O	O
 no	O	O
 haber	O	O
@@ -30131,7 +30131,7 @@ andaluz	O	O
 y	O	O
 diputado	O	O
 por	O	O
-Málaga	B-LOC	B-LOC
+Málaga	B-LOC	O
 ,	O	O
 Ildefonso	B-PER	B-PER
 Dell'Olmo	I-PER	I-PER
@@ -30166,7 +30166,7 @@ en	O	O
 el	O	O
 Hospital	B-LOC	B-LOC
 Carlos	I-LOC	I-LOC
-Haya	I-LOC	I-PER
+Haya	I-LOC	I-MISC
 .	O	O
 Según	O	O
 el	O	O
@@ -30283,7 +30283,7 @@ en	O	O
 1997	O	O
 ,	O	O
 subrayó	O	O
-Dell'Olmo	B-PER	I-PER
+Dell'Olmo	B-PER	B-PER
 ,	O	O
 se	O	O
 produjo	O	O
@@ -31203,7 +31203,7 @@ víctimas	O	O
 .	O	O
 ISRAEL	B-LOC	O
 -	O	O
-LIBANO	B-LOC	B-ORG
+LIBANO	B-LOC	O
 /	O	O
 LIBERACION	O	O
 -	O	O
@@ -32207,7 +32207,7 @@ remitió	O	O
 a	O	O
 los	O	O
 Servicios	B-ORG	B-ORG
-Sociales	I-ORG	I-MISC
+Sociales	I-ORG	I-ORG
 municipales	O	O
 "	O	O
 que	O	O
@@ -32284,7 +32284,7 @@ de	O	O
 que	O	O
 el	O	O
 Juzgado	B-ORG	B-ORG
-de	I-ORG	O
+de	I-ORG	I-ORG
 Menores	I-ORG	I-ORG
 decida	O	O
 sobre	O	O
@@ -33452,7 +33452,7 @@ que	O	O
 la	O	O
 Comisión	B-ORG	B-ORG
 vigila	O	O
-la	O	O
+la	O	I-ORG
 "	O	O
 sorprendente	O	O
 "	O	O
@@ -33497,14 +33497,14 @@ por	O	O
 el	O	O
 Comisario	B-PER	B-ORG
 Europeo	I-PER	I-ORG
-de	I-PER	O
-Competencia	I-PER	B-MISC
+de	I-PER	I-ORG
+Competencia	I-PER	I-ORG
 ,	O	O
 Mario	B-PER	B-PER
 Monti	I-PER	I-PER
 .	O	O
 El	O	O
-Ministro	B-PER	B-ORG
+Ministro	B-PER	I-ORG
 de	I-PER	O
 Hacienda	I-PER	B-ORG
 ha	O	O
@@ -34021,7 +34021,7 @@ Española	I-ORG	I-ORG
 de	I-ORG	I-ORG
 Transporte	I-ORG	I-ORG
 de	I-ORG	O
-Mercancías	I-ORG	I-ORG
+Mercancías	I-ORG	B-LOC
 ,	O	O
 reivindica	O	O
 la	O	O
@@ -34159,7 +34159,7 @@ informaron	O	O
 fuentes	O	O
 próximas	O	O
 a	O	O
-Llauradó	B-PER	O
+Llauradó	B-PER	B-ORG
 ,	O	O
 éste	O	O
 ya	O	O
@@ -34257,7 +34257,7 @@ la	O	O
 presidencia	O	O
 del	O	O
 FC	B-ORG	B-ORG
-Barcelona	I-ORG	I-ORG
+Barcelona	I-ORG	B-ORG
 se	O	O
 ha	O	O
 mostrado	O	O
@@ -34875,7 +34875,7 @@ del	O	O
 titular	O	O
 de	O	O
 Medio	B-MISC	B-MISC
-Ambiente	I-MISC	I-MISC
+Ambiente	I-MISC	I-ORG
 de	O	O
 cumplir	O	O
 los	O	O
@@ -34974,7 +34974,7 @@ que	O	O
 dependen	O	O
 de	O	O
 la	O	O
-Cuenca	B-LOC	B-ORG
+Cuenca	B-LOC	I-MISC
 del	I-LOC	O
 Tajo	I-LOC	B-MISC
 ;	O	O
@@ -34982,7 +34982,7 @@ y	O	O
 el	O	O
 abastecimiento	O	O
 de	O	O
-Azuaga	B-LOC	B-LOC
+Azuaga	B-LOC	I-ORG
 dependiente	O	O
 de	O	O
 las	O	O
@@ -35062,7 +35062,7 @@ entre	O	O
 El	B-LOC	O
 Casar	I-LOC	B-ORG
 y	O	O
-Arroyo	B-LOC	B-PER
+Arroyo	B-LOC	B-LOC
 de	I-LOC	O
 Malpartida	I-LOC	B-LOC
 ,	O	O
@@ -35135,7 +35135,7 @@ al	O	O
 consejero	O	O
 del	O	O
 desarrollo	O	O
-del	O	O
+del	O	I-MISC
 Plan	B-MISC	B-MISC
 Hidráulico	I-MISC	I-MISC
 Nacional	I-MISC	I-MISC
@@ -35311,7 +35311,7 @@ LIBANO	B-LOC	O
 -	O	O
 ISRAEL	B-LOC	B-ORG
 AUMENTAN	O	O
-CHOQUES	O	O
+CHOQUES	O	B-PER
 GUERRILLEROS	O	O
 LIBANESES	O	O
 Y	O	O
@@ -35378,7 +35378,7 @@ LIBANO	B-LOC	O
 ISRAEL	B-LOC	B-ORG
 /	O	O
 ENFRENTAMIENTOS	O	B-MISC
-PERU	B-LOC	O
+PERU	B-LOC	B-LOC
 :	O	O
 OBSERVADORES	O	O
 NACIONALES	O	O
@@ -35562,7 +35562,7 @@ Tropas	O	O
 leales	O	O
 al	O	O
 Gobierno	B-ORG	B-ORG
-de	O	I-ORG
+de	O	O
 Sierra	B-LOC	I-ORG
 Leona	I-LOC	I-ORG
 frustraron	O	O
@@ -35843,7 +35843,7 @@ JUICIO	O	O
 DE	O	O
 LOCKERBIE	B-LOC	O
 Camp	B-LOC	B-LOC
-Zeist	I-LOC	I-PER
+Zeist	I-LOC	I-LOC
 (	O	O
 Holanda	B-LOC	B-LOC
 )	O	O
@@ -36251,7 +36251,7 @@ por	O	O
 ciento	O	O
 )	O	O
 ,	O	O
-Olivetti	B-ORG	B-PER
+Olivetti	B-ORG	B-LOC
 (	O	O
 +6,61%	O	O
 )	O	O
@@ -36450,7 +36450,7 @@ Energía.	I-ORG	I-ORG
 el	I-ORG	O
 Ambiente	I-ORG	I-ORG
 y	O	O
-Hdp	B-ORG	B-LOC
+Hdp	B-ORG	B-MISC
 (	O	O
 +4,21%	O	O
 )	O	O
@@ -36934,7 +36934,7 @@ Mesa	B-ORG	B-ORG
 del	I-ORG	I-ORG
 Pacto	I-ORG	B-MISC
 por	I-ORG	I-MISC
-el	I-ORG	O
+el	I-ORG	I-MISC
 Empleo	I-ORG	I-MISC
 de	O	O
 Palencia	B-LOC	I-ORG
@@ -37061,7 +37061,7 @@ La	O	O
 Mesa	B-ORG	B-ORG
 del	I-ORG	I-ORG
 Pacto	I-ORG	B-MISC
-por	I-ORG	O
+por	I-ORG	I-ORG
 el	I-ORG	O
 Empleo	I-ORG	B-ORG
 fue	O	O
@@ -37742,7 +37742,7 @@ por	O	O
 el	O	O
 rodillo	O	O
 de	O	O
-CiU-PP	B-ORG	B-ORG
+CiU-PP	B-ORG	B-MISC
 ,	O	O
 pero	O	O
 me	O	O
@@ -38229,7 +38229,7 @@ de	O	O
 la	O	O
 Región	O	O
 .	O	O
-Alonso	B-PER	O
+Alonso	B-PER	B-PER
 ,	O	O
 que	O	O
 mantuvo	O	O
@@ -38310,7 +38310,7 @@ de	I-MISC	I-ORG
 la	I-MISC	I-MISC
 Tierra	I-MISC	I-MISC
 de	I-MISC	I-MISC
-Castilla	I-MISC	B-LOC
+Castilla	I-MISC	I-MISC
 "	I-MISC	O
 y	O	O
 otros	O	O
@@ -38722,7 +38722,7 @@ de	O	O
 riego	O	O
 .	O	O
 Castro	B-LOC	B-PER
-Urdiales	I-LOC	B-LOC
+Urdiales	I-LOC	I-PER
 ,	O	O
 23	O	O
 may	O	O
@@ -38751,8 +38751,8 @@ incluidas	O	O
 en	O	O
 la	O	O
 Semana	O	B-MISC
-del	O	O
-Medio	O	B-MISC
+del	O	I-MISC
+Medio	O	I-MISC
 Ambiente	O	I-MISC
 de	O	O
 Castro	O	B-PER
@@ -39426,7 +39426,7 @@ vinculado	O	O
 a	O	O
 la	O	O
 Iglesia	B-ORG	B-ORG
-Católica	I-ORG	I-ORG
+Católica	I-ORG	O
 )	O	O
 indicaron	O	O
 a	O	O
@@ -39645,7 +39645,7 @@ de	O	O
 la	O	O
 reserva	O	O
 de	O	O
-Vale	B-LOC	I-ORG
+Vale	B-LOC	I-LOC
 do	I-LOC	O
 Guaporé	I-LOC	I-ORG
 .	O	O
@@ -39755,7 +39755,7 @@ hoy	O	O
 ,	O	O
 el	O	O
 socialdemócrata	O	O
-Racan	B-PER	B-PER
+Racan	B-PER	I-PER
 respaldó	O	O
 la	O	O
 propuesta	O	O
@@ -40524,7 +40524,7 @@ cambio	O	O
 actual	O	O
 .	O	O
 Space	B-ORG	B-PER
-Adventures	I-ORG	I-PER
+Adventures	I-ORG	I-ORG
 ha	O	O
 reservado	O	O
 ya	O	O
@@ -40611,7 +40611,7 @@ NASDA	B-ORG	B-ORG
 cuyo	O	O
 investigador	O	O
 especial	O	O
-Patrick	B-PER	I-PER
+Patrick	B-PER	B-PER
 Collins	I-PER	I-PER
 lamentó	O	O
 hoy	O	O
@@ -41014,7 +41014,7 @@ ciento	O	O
 .	O	O
 El	O	O
 Nuevo	B-ORG	B-MISC
-Mercado	I-ORG	I-ORG
+Mercado	I-ORG	I-MISC
 español	O	O
 hoy	O	O
 no	O	O
@@ -41507,7 +41507,7 @@ un	O	O
 por	O	O
 ciento	O	O
 ,	O	O
-Londres	B-LOC	O
+Londres	B-LOC	B-ORG
 un	O	O
 0,85	O	O
 por	O	O
@@ -41537,9 +41537,9 @@ por	O	O
 los	O	O
 avances	O	O
 de	O	O
-Olivetti	B-ORG	B-LOC
+Olivetti	B-ORG	B-ORG
 y	O	O
-Unicrédito	B-ORG	B-LOC
+Unicrédito	B-ORG	B-PER
 ,	O	O
 entre	O	O
 otros	O	O
@@ -41590,7 +41590,7 @@ de	I-ORG	I-ORG
 Medio	I-ORG	I-ORG
 Ambiente	I-ORG	I-ORG
 de	I-ORG	O
-la	I-ORG	O
+la	I-ORG	I-ORG
 Generalitat	I-ORG	B-ORG
 invertirá	O	O
 5.500	O	O
@@ -41696,7 +41696,7 @@ como	O	O
 al	O	O
 Gobierno	B-ORG	B-ORG
 de	I-ORG	I-ORG
-la	I-ORG	O
+la	I-ORG	I-ORG
 Generalitat	I-ORG	I-ORG
 ,	O	O
 así	O	O
@@ -42162,7 +42162,7 @@ la	O	O
 única	O	O
 Comunidad	B-ORG	B-ORG
 Autónoma	I-ORG	I-ORG
-de	O	O
+de	O	I-ORG
 todo	O	O
 el	O	O
 Estado	B-ORG	B-ORG
@@ -42406,7 +42406,7 @@ anteriores	O	O
 en	O	O
 poder	O	O
 de	O	O
-Francisco	B-PER	B-PER
+Francisco	B-PER	I-LOC
 Calderón	I-PER	I-PER
 ,	O	O
 José	B-PER	B-PER
@@ -42893,7 +42893,7 @@ Polack	I-PER	I-PER
 "	O	O
 alias	O	O
 "	O	O
-Tip	B-PER	I-MISC
+Tip	B-PER	B-MISC
 ,	O	O
 en	O	O
 el	O	O
@@ -42971,7 +42971,7 @@ biografía	O	O
 y	O	O
 de	O	O
 la	O	O
-España	B-LOC	B-ORG
+España	B-LOC	B-LOC
 comprendida	O	O
 entre	O	O
 las	O	O
@@ -43114,7 +43114,7 @@ recordó	O	O
 la	O	O
 intervención	O	O
 de	O	O
-Tip	B-PER	B-ORG
+Tip	B-PER	B-PER
 al	O	O
 interpretar	O	O
 a	O	O
@@ -43654,7 +43654,7 @@ proponer	O	O
 a	O	O
 la	O	O
 Junta	B-ORG	B-ORG
-de	I-ORG	I-ORG
+de	I-ORG	O
 Acreedores	I-ORG	I-ORG
 ,	O	O
 convocada	O	O
@@ -44113,7 +44113,7 @@ del	O	O
 Grupo	B-ORG	B-ORG
 Consultivo	I-ORG	I-ORG
 para	I-ORG	O
-la	I-ORG	O
+la	I-ORG	I-ORG
 Reconstrucción.	I-ORG	I-ORG
 Transformación	I-ORG	I-ORG
 de	I-ORG	O
@@ -45025,7 +45025,7 @@ cambio	O	O
 actual	O	O
 .	O	O
 Space	B-ORG	B-PER
-Adventures	I-ORG	I-PER
+Adventures	I-ORG	I-ORG
 ha	O	O
 reservado	O	O
 ya	O	O
@@ -45112,7 +45112,7 @@ NASDA	B-ORG	B-ORG
 cuyo	O	O
 investigador	O	O
 especial	O	O
-Patrick	B-PER	I-PER
+Patrick	B-PER	B-PER
 Collins	I-PER	I-PER
 lamentó	O	O
 hoy	O	O
@@ -46042,7 +46042,7 @@ próxima	O	O
 temporada	O	O
 turística	O	O
 .	O	O
-Barceló	B-PER	B-PER
+Barceló	B-PER	B-ORG
 considera	O	O
 que	O	O
 esta	O	O
@@ -46710,7 +46710,7 @@ estado	O	O
 de	O	O
 Río	B-LOC	B-LOC
 de	I-LOC	I-LOC
-Janeiro	I-LOC	I-LOC
+Janeiro	I-LOC	I-ORG
 .	O	O
 El	O	O
 delantero	O	O
@@ -46783,7 +46783,7 @@ de	O	O
 la	O	O
 Consellería	B-ORG	B-ORG
 de	I-ORG	I-ORG
-Educación	I-ORG	I-ORG
+Educación	I-ORG	B-MISC
 impidió	O	O
 que	O	O
 una	O	O
@@ -46811,7 +46811,7 @@ Confederación	B-ORG	B-ORG
 Intersindical	I-ORG	I-ORG
 Galega	I-ORG	I-ORG
 (	O	O
-CIG	B-ORG	B-ORG
+CIG	B-ORG	B-MISC
 )	O	O
 .	O	O
 La	O	O
@@ -46874,7 +46874,7 @@ trabajo	O	O
 ,	O	O
 según	O	O
 la	O	O
-CIG	B-ORG	B-ORG
+CIG	B-ORG	B-MISC
 .	O	O
 Antón	B-PER	B-PER
 Gómez	I-PER	I-PER
@@ -46942,7 +46942,7 @@ la	O	O
 ley	O	O
 "	O	O
 .	O	O
-Resulta	O	O
+Resulta	O	B-PER
 "	O	O
 paradójico	O	O
 que	O	O
@@ -47496,7 +47496,7 @@ Gobierno	B-ORG	B-ORG
 español	O	I-ORG
 de	O	I-ORG
 que	O	O
-Europa	B-LOC	B-LOC
+Europa	B-LOC	B-ORG
 necesita	O	O
 una	O	O
 moneda	O	O
@@ -47656,7 +47656,7 @@ agregados	O	O
 comerciales	O	O
 españoles	O	O
 en	O	O
-EEUU	B-ORG	B-LOC
+EEUU	B-ORG	B-ORG
 ,	O	O
 Canadá	B-LOC	B-ORG
 y	O	O
@@ -47763,7 +47763,7 @@ impuestas	O	O
 contra	O	O
 el	O	O
 Gobierno	B-ORG	B-ORG
-de	I-ORG	O
+de	I-ORG	I-ORG
 Viena	I-ORG	I-ORG
 por	O	O
 la	O	O
@@ -47978,7 +47978,7 @@ señal	O	O
 de	O	O
 que	O	O
 los	O	O
-Catorce	B-ORG	B-ORG
+Catorce	B-ORG	I-ORG
 reflexionan	O	O
 sobre	O	O
 sus	O	O
@@ -48240,7 +48240,7 @@ Asociación	B-ORG	B-ORG
 de	I-ORG	I-ORG
 la	I-ORG	I-ORG
 Prensa	I-ORG	I-ORG
-de	I-ORG	I-ORG
+de	I-ORG	O
 Valladolid	I-ORG	B-LOC
 (	O	O
 APV	B-ORG	B-ORG
@@ -48307,7 +48307,7 @@ el	O	O
 de	O	O
 noviembre	O	O
 de	O	O
-2000	O	I-MISC
+2000	O	O
 ,	O	O
 que	O	O
 se	O	O
@@ -48455,7 +48455,7 @@ otros	O	O
 ganadores	O	O
 .	O	O
 El	O	O
-Premio	B-MISC	B-MISC
+Premio	B-MISC	B-ORG
 de	I-MISC	O
 Periodismo	I-MISC	I-MISC
 Miguel	I-MISC	I-MISC
@@ -48470,7 +48470,7 @@ de	O	O
 la	O	O
 conmemoración	O	O
 del	O	O
-IV	O	B-MISC
+IV	O	B-ORG
 centenario	O	O
 de	O	O
 la	O	O
@@ -48618,7 +48618,7 @@ anterior	O	O
 sesión	O	O
 .	O	O
 El	O	O
-Nuevo	B-ORG	B-MISC
+Nuevo	B-ORG	I-MISC
 Mercado	I-ORG	I-MISC
 español	O	O
 no	O	O
@@ -49813,11 +49813,11 @@ Aragón	B-LOC	B-LOC
 .	O	O
 El	O	O
 Museo	B-ORG	B-ORG
-de	I-ORG	O
-la	I-ORG	O
+de	I-ORG	I-ORG
+la	I-ORG	I-ORG
 Pastelería	I-ORG	I-LOC
 de	O	O
-Daroca	B-LOC	B-LOC
+Daroca	B-LOC	I-MISC
 ,	O	O
 que	O	O
 se	O	O
@@ -50169,7 +50169,7 @@ financiera	O	O
 al	O	O
 ADRI	B-ORG	B-ORG
 de	I-ORG	O
-Daroca-Calamocha	I-ORG	B-LOC
+Daroca-Calamocha	I-ORG	I-LOC
 que	O	O
 cuenta	O	O
 con	O	O
@@ -50612,7 +50612,7 @@ incrementen	O	O
 por	O	O
 encima	O	O
 de	O	O
-IPC	B-MISC	B-ORG
+IPC	B-MISC	B-MISC
 ,	O	O
 "	O	O
 ante	O	O
@@ -51051,10 +51051,10 @@ situó	O	O
 el	O	O
 índice	O	O
 general	O	O
-SMI	B-MISC	B-ORG
+SMI	B-MISC	B-MISC
 (	O	O
 Swiss	B-MISC	B-ORG
-Market	I-MISC	B-PER
+Market	I-MISC	I-ORG
 Index	I-MISC	I-ORG
 )	O	O
 en	O	O
@@ -51238,8 +51238,8 @@ por	O	O
 el	O	O
 Ministerio	B-ORG	B-ORG
 peruano	O	O
-de	O	O
-Relaciones	B-ORG	I-ORG
+de	O	I-ORG
+Relaciones	B-ORG	B-ORG
 Exteriores	I-ORG	I-MISC
 y	O	O
 la	O	O

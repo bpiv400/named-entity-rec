@@ -161,22 +161,21 @@ if __name__ == "__main__":
     # model = AdaBoostClassifier(DecisionTreeClassifier(max_depth=1),
     # n_estimators=100,
     # learning_rate=1)
-    percept = Perceptron()
-    log1 = LogisticRegression(C = .01)
-    log2 = LogisticRegression(C = .1)
-    log3 = LogisticRegression(C = 1)
-    log4 = LogisticRegression(C = 10)
-    log5 = LogisticRegression(C = 100)
-    print("Training First Models")
 
-    percept.fit(X_train, train_labels)
-    log1.fit(X_train, train_labels)
-    log2.fit(X_train, train_labels)
-    log3.fit(X_train, train_labels)
-    log4.fit(X_train, train_labels)
-    log5.fit(X_train, train_labels)
+    mlp1a3 = MLPClassifier(alpha = 1, hidden_layer_sizes = (100))
+    m2p1a3 = MLPClassifier(alpha = 1, hidden_layer_sizes = (500))
+    m3p1a3 = MLPClassifier(alpha = 1, hidden_layer_sizes = (1000))
+    m4p1a3 = MLPClassifier(alpha = 1, hidden_layer_sizes = (2000))
 
-   
+    print("Training New Model")
+    mlp1a3.fit(X_train, train_labels)  
+    print("Training New Model")
+    mlp2a3.fit(X_train, train_labels)
+    print("Training New Model")
+    mlp3a3.fit(X_train, train_labels)
+    print("Training New Model")
+    mlp4a3.fit(X_train, train_labels)
+    
     # train_pred = model1.predict(X_train)
     
     train_feats = []
@@ -215,14 +214,11 @@ if __name__ == "__main__":
 
     X_test = vectorizer1.transform(test_feats)
 
-    percept_pred = percept.predict(X_test)
-    log1_pred = log1.predict(X_test)
-    log2_pred = log2.predict(X_test)
-    log3_pred = log3.predict(X_test)
-    log4_pred = log4.predict(X_test)
-    log5_pred = log5.predict(X_test)
-
-
+    mlp1a3_pred = mlp1a3.predict(X_test)  
+    mlp2a3_pred = mlp2a3.predict(X_test)
+    mlp3a3_pred = mlp3a3.predict(X_test)
+    mlp4a3_pred = mlp4a3.predict(X_test)
+    
     #instance_counter = 0
     #for sent in curr_sents:
     #    curr_preds = [0]*len(sent)
@@ -240,13 +236,11 @@ if __name__ == "__main__":
     #y_pred = model2.predict(X_test)
     print("Writing Results")
 
-    write_results("percept", percept_pred)
-    write_results("log1", log1_pred)
-    write_results("log2", log2_pred)
-    write_results("log3", log3_pred)
-    write_results("log4", log4_pred)
-    write_results("log5", log5_pred)
-
+    write_results("mlp1a3_short", mlp1a3_pred)
+    write_results("mlp2a3_short", mlp2a3_pred)
+    write_results("mlp3a3_short", mlp3a3_pred)
+    write_results("mlp4a3_short", mlp4a3_pred)
+    
     print("Now run: python conlleval.py results.txt")
 
 
